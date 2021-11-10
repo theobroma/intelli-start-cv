@@ -9,11 +9,13 @@ import {
 } from '@material-ui/core';
 import React from 'react';
 import SectionTitle from '../../../@components/UI/SectionTitle';
+import ContactsInfo from './ContactsInfo';
 
 const useStyles = makeStyles((theme: Theme) => ({
   avatarBox: {
     display: 'flex',
     justifyContent: 'center',
+    borderRadius: 4,
     [theme.breakpoints.up('md')]: {
       justifyContent: 'right',
     },
@@ -42,13 +44,15 @@ const AboutSection: React.FC = () => {
               color="inherit"
               paragraph
             >
-              I would like to occupy JavaScript React developer position in a
-              team of highly qualified specialists. Last years I was engaged in
-              self-education of learning web technologies. I chose front-end
-              development and focused on my skills improvement. Also I improved
-              my English so I am strong enough in reading, writing and
-              understanding technical resources.
+              My name is Oleksandr Syryi. I would like to occupy JavaScript
+              React developer position in a team of highly qualified
+              specialists. Last years I was engaged in self-education of
+              learning web technologies. I chose front-end development and
+              focused on my skills improvement. Also I improved my English so I
+              am strong enough in reading, writing and understanding technical
+              resources.
             </Typography>
+            <ContactsInfo />
           </Grid>
           <Grid item xs={12} sm={4} md={4}>
             <Box className={classes.avatarBox}>
