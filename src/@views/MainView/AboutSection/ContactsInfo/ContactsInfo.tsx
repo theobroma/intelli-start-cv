@@ -39,10 +39,10 @@ const ContactsInfo: React.FC = () => {
           color="textSecondary"
           display="inline"
         >
-          Today:
+          Name:
         </Typography>
         <Typography variant="subtitle1" align="center" display="inline">
-          text
+          Oleksandr Syryi
         </Typography>
       </Box>
       <Box my={2}>
@@ -54,10 +54,10 @@ const ContactsInfo: React.FC = () => {
           color="textSecondary"
           display="inline"
         >
-          Today:
+          Position:
         </Typography>
         <Typography variant="subtitle1" align="center" display="inline">
-          text
+          JavaScript front-end Developer
         </Typography>
       </Box>
       <Box my={2}>
@@ -69,10 +69,70 @@ const ContactsInfo: React.FC = () => {
           color="textSecondary"
           display="inline"
         >
-          Today:
+          Address:
         </Typography>
         <Typography variant="subtitle1" align="center" display="inline">
-          text
+          Krolevets , Sumy region, Ukraine.
+        </Typography>
+      </Box>
+      <Box my={2}>
+        <Typography color="textSecondary" display="inline">
+          <FontAwesomeIcon icon={faCalendarAlt} />
+        </Typography>
+        <Typography
+          className={classes.title}
+          color="textSecondary"
+          display="inline"
+        >
+          Birthday:
+        </Typography>
+        <Typography variant="subtitle1" align="center" display="inline">
+          22 March 1988
+        </Typography>
+      </Box>
+      <Box my={2}>
+        <Typography color="textSecondary" display="inline">
+          <FontAwesomeIcon icon={faCalendarAlt} />
+        </Typography>
+        <Typography
+          className={classes.title}
+          color="textSecondary"
+          display="inline"
+        >
+          Skype:
+        </Typography>
+        <Typography variant="subtitle1" align="center" display="inline">
+          fastwriter222
+        </Typography>
+      </Box>
+      <Box my={2}>
+        <Typography color="textSecondary" display="inline">
+          <FontAwesomeIcon icon={faCalendarAlt} />
+        </Typography>
+        <Typography
+          className={classes.title}
+          color="textSecondary"
+          display="inline"
+        >
+          Phone:
+        </Typography>
+        <Typography variant="subtitle1" align="center" display="inline">
+          +3 (068) 816-35-77
+        </Typography>
+      </Box>
+      <Box my={2}>
+        <Typography color="textSecondary" display="inline">
+          <FontAwesomeIcon icon={faCalendarAlt} />
+        </Typography>
+        <Typography
+          className={classes.title}
+          color="textSecondary"
+          display="inline"
+        >
+          Email:
+        </Typography>
+        <Typography variant="subtitle1" align="center" display="inline">
+          theobroma222@gmail.com
         </Typography>
       </Box>
       {/* 2 */}
