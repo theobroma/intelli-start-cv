@@ -46,7 +46,7 @@ const Footer: React.FC = () => {
           <Box>
             <IconButton
               color="inherit"
-              href="https://github.com/theobroma/weather-app"
+              href="https://github.com/theobroma/intelli-start-cv"
               data-testid="github-link"
               aria-label="Github Link"
             >
