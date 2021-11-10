@@ -6,6 +6,7 @@ import {
   CardContent,
   CardMedia,
   Container,
+  Divider,
   Grid,
   makeStyles,
   Paper,
@@ -36,8 +37,10 @@ const ProjectsSection: React.FC = () => {
   const classes = useStyles();
   const cards = [{}, {}, {}] as any;
   return (
-    <Container maxWidth="lg">
-      {/* <Grid container spacing={3} style={{ padding: 3 }}>
+    <>
+      <Divider />
+      <Container maxWidth="lg">
+        {/* <Grid container spacing={3} style={{ padding: 3 }}>
         <Grid item xs={12}>
           <Box mb={1}>
             <Paper elevation={3}>
@@ -61,35 +64,36 @@ const ProjectsSection: React.FC = () => {
           </Box>
         </Grid>
       </Grid> */}
-      <SectionTitle>SectionTitle</SectionTitle>
-      <Grid container spacing={4}>
-        {cards.map((card: any) => (
-          <Grid item key={card} xs={12} sm={12} md={4}>
-            <Card className={classes.root}>
-              <CardMedia
-                className={classes.media}
-                component="img"
-                image="https://source.unsplash.com/random"
-                alt="random"
-              />
-              <CardContent className={classes.content}>
-                <Typography gutterBottom variant="h5" component="h2">
-                  Heading
-                </Typography>
-                <Typography>
-                  This is a media card. You can use this section to describe the
-                  content.
-                </Typography>
-              </CardContent>
-              <CardActions>
-                <Button size="small">View</Button>
-                <Button size="small">Edit</Button>
-              </CardActions>
-            </Card>
-          </Grid>
-        ))}
-      </Grid>
-    </Container>
+        <SectionTitle>SectionTitle</SectionTitle>
+        <Grid container spacing={4}>
+          {cards.map((card: any) => (
+            <Grid item key={card} xs={12} sm={12} md={4}>
+              <Card className={classes.root}>
+                <CardMedia
+                  className={classes.media}
+                  component="img"
+                  image="https://source.unsplash.com/random"
+                  alt="random"
+                />
+                <CardContent className={classes.content}>
+                  <Typography gutterBottom variant="h5" component="h2">
+                    Heading
+                  </Typography>
+                  <Typography>
+                    This is a media card. You can use this section to describe
+                    the content.
+                  </Typography>
+                </CardContent>
+                <CardActions>
+                  <Button size="small">View</Button>
+                  <Button size="small">Edit</Button>
+                </CardActions>
+              </Card>
+            </Grid>
+          ))}
+        </Grid>
+      </Container>
+    </>
   );
 };
 

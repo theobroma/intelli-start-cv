@@ -5,6 +5,7 @@ import EmailIcon from '@material-ui/icons/Email';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import TelegramIcon from '@material-ui/icons/Telegram';
 import React from 'react';
+import { QuoteText } from './QuoteText';
 
 const useStyles = makeStyles((theme: Theme) => ({
   title: {
@@ -174,6 +175,10 @@ const ContactsInfo: React.FC = () => {
         >
           Telegram
         </Button>
+      </Box>
+      {/* 3 */}
+      <Box py={3}>
+        <QuoteText />
       </Box>
     </>
   );
