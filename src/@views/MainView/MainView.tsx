@@ -7,6 +7,7 @@ import Search from '../../@components/Search';
 import { getForecastTC } from '../../@store/forecast/slice';
 import { сoordinatesSelector } from '../../@store/сoordinates/selectors';
 import { setUserCoordinatesTC } from '../../@store/сoordinates/slice';
+import AboutSection from './AboutSection';
 import ProjectsSection from './ProjectsSection';
 
 const MainView: React.FC = () => {
@@ -28,6 +29,7 @@ const MainView: React.FC = () => {
 
   return (
     <>
+      <AboutSection />
       <ProjectsSection />
     </>
     // <Container maxWidth="lg">
