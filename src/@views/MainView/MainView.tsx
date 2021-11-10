@@ -7,6 +7,7 @@ import Search from '../../@components/Search';
 import { getForecastTC } from '../../@store/forecast/slice';
 import { сoordinatesSelector } from '../../@store/сoordinates/selectors';
 import { setUserCoordinatesTC } from '../../@store/сoordinates/slice';
+import ProjectsSection from './ProjectsSection';
 
 const MainView: React.FC = () => {
   const dispatch = useDispatch();
@@ -26,31 +27,34 @@ const MainView: React.FC = () => {
   }, [lat, lon, dispatch]);
 
   return (
-    <Container maxWidth="lg">
-      <Grid container spacing={3} style={{ padding: 3 }}>
-        <Grid item xs={12}>
-          <Box mb={1}>
-            <Paper elevation={3}>
-              <Search />
-            </Paper>
-          </Box>
-        </Grid>
-        <Grid item xs={12}>
-          <Box mb={1}>
-            <Paper elevation={3}>
-              <CurrentWeather />
-            </Paper>
-          </Box>
-        </Grid>
-        <Grid item xs={12}>
-          <Box mb={1}>
-            <Paper elevation={3}>
-              <Forecast />
-            </Paper>
-          </Box>
-        </Grid>
-      </Grid>
-    </Container>
+    <>
+      <ProjectsSection />
+    </>
+    // <Container maxWidth="lg">
+    //   <Grid container spacing={3} style={{ padding: 3 }}>
+    //     <Grid item xs={12}>
+    //       <Box mb={1}>
+    //         <Paper elevation={3}>
+    //           <Search />
+    //         </Paper>
+    //       </Box>
+    //     </Grid>
+    //     <Grid item xs={12}>
+    //       <Box mb={1}>
+    //         <Paper elevation={3}>
+    //           <CurrentWeather />
+    //         </Paper>
+    //       </Box>
+    //     </Grid>
+    //     <Grid item xs={12}>
+    //       <Box mb={1}>
+    //         <Paper elevation={3}>
+    //           <Forecast />
+    //         </Paper>
+    //       </Box>
+    //     </Grid>
+    //   </Grid>
+    // </Container>
   );
 };
 
