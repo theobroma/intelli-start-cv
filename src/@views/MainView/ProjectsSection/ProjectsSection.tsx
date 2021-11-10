@@ -15,6 +15,7 @@ import { Search } from '@material-ui/icons';
 import React from 'react';
 import CurrentWeather from '../../../@components/CurrentWeather';
 import Forecast from '../../../@components/Forecast';
+import SectionTitle from '../../../@components/UI/SectionTitle';
 
 const useStyles = makeStyles({
   root: {
@@ -60,6 +61,7 @@ const ProjectsSection: React.FC = () => {
           </Box>
         </Grid>
       </Grid> */}
+      <SectionTitle>SectionTitle</SectionTitle>
       <Grid container spacing={4}>
         {cards.map((card: any) => (
           <Grid item key={card} xs={12} sm={12} md={4}>
