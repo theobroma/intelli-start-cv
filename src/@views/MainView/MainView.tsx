@@ -1,4 +1,4 @@
-import { Box, Container, Grid, Paper } from '@material-ui/core';
+import { Box, Container, Divider, Grid, Paper } from '@material-ui/core';
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import CurrentWeather from '../../@components/CurrentWeather';
@@ -9,6 +9,7 @@ import { сoordinatesSelector } from '../../@store/сoordinates/selectors';
 import { setUserCoordinatesTC } from '../../@store/сoordinates/slice';
 import AboutSection from './AboutSection';
 import ProjectsSection from './ProjectsSection';
+import SkillsSection from './SkillsSection';
 
 const MainView: React.FC = () => {
   const dispatch = useDispatch();
@@ -29,7 +30,10 @@ const MainView: React.FC = () => {
 
   return (
     <>
-      <AboutSection />
+      {/* <AboutSection /> */}
+      <Divider />
+      <SkillsSection />
+      <Divider />
       <ProjectsSection />
     </>
     // <Container maxWidth="lg">

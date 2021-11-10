@@ -38,7 +38,6 @@ const ProjectsSection: React.FC = () => {
   const cards = [{}, {}, {}] as any;
   return (
     <>
-      <Divider />
       <Container maxWidth="lg">
         {/* <Grid container spacing={3} style={{ padding: 3 }}>
         <Grid item xs={12}>
