@@ -22,12 +22,12 @@ const useStyles = makeStyles((theme: Theme) => ({
     fontWeight: 400,
   },
   skillTitle: {
-    fontSize: '1.5rem',
+    fontSize: '1.2rem',
     paddingTop: 16,
-    marginBottom: 11,
+    marginBottom: 0,
   },
   skillDesc: {
-    fontSize: '1.2rem',
+    fontSize: '1rem',
     color: alpha(theme.palette.text.primary, 0.5),
   },
 }));
@@ -93,9 +93,6 @@ const SkillsSection: React.FC = () => {
               Zeplin/Figma
             </Typography>
           </Grid>
-          {/* </Grid> */}
-          {/* 3 */}
-          {/* <Grid container item xs={12} sm={12} md={4} spacing={4}> */}
           <Grid item xs={12} sm={6}>
             <Typography
               className={classes.skillTitle}
