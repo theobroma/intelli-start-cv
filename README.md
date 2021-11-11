@@ -1,12 +1,8 @@
-# Weather App
+# Portfolio Website
 
-##### React & Material UI app utilizing the Weatherapi API.
+##### React & Material UI app
 
-It is designed display your current and 3 day forecast weather.
-It uses geolocation to find your city. This still gives the user the option to search for another location.
-
-Register your API Key at
-[https://www.weatherapi.com/](https://www.weatherapi.com/)
+My personal portfolio which features some of my github projects as well as my resume and technical skills.
 
 ## Quick Start
 
