@@ -22,6 +22,7 @@ const SkillsSection: React.FC = () => {
   return (
     <Container maxWidth="lg">
       <Grid container spacing={4}>
+        {/* 1 */}
         <Grid item xs={12} sm={12} md={4}>
           <SectionTitle>Skills</SectionTitle>
           <Typography
@@ -34,6 +35,60 @@ const SkillsSection: React.FC = () => {
             into practice.
           </Typography>
           <EmojiObjectsIcon style={{ fontSize: 72 }} color="primary" />
+        </Grid>
+        {/* 2 */}
+        <Grid container item xs={12} sm={12} md={4} spacing={4}>
+          <Grid item xs={12}>
+            <SectionTitle>Skills</SectionTitle>
+            <Typography
+              className={classes.description}
+              variant="h6"
+              color="inherit"
+              paragraph
+            >
+              1
+            </Typography>
+            <EmojiObjectsIcon style={{ fontSize: 72 }} color="primary" />
+          </Grid>
+          <Grid item xs={12}>
+            <SectionTitle>Skills</SectionTitle>
+            <Typography
+              className={classes.description}
+              variant="h6"
+              color="inherit"
+              paragraph
+            >
+              2
+            </Typography>
+            <EmojiObjectsIcon style={{ fontSize: 72 }} color="primary" />
+          </Grid>
+        </Grid>
+        {/* 3 */}
+        <Grid container item xs={12} sm={12} md={4} spacing={4}>
+          <Grid item xs={12}>
+            <SectionTitle>Skills</SectionTitle>
+            <Typography
+              className={classes.description}
+              variant="h6"
+              color="inherit"
+              paragraph
+            >
+              1
+            </Typography>
+            <EmojiObjectsIcon style={{ fontSize: 72 }} color="primary" />
+          </Grid>
+          <Grid item xs={12}>
+            <SectionTitle>Skills</SectionTitle>
+            <Typography
+              className={classes.description}
+              variant="h6"
+              color="inherit"
+              paragraph
+            >
+              2
+            </Typography>
+            <EmojiObjectsIcon style={{ fontSize: 72 }} color="primary" />
+          </Grid>
         </Grid>
       </Grid>
     </Container>
