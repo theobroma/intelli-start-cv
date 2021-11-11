@@ -59,8 +59,12 @@ const AboutSection: React.FC = () => {
               am strong enough in reading, writing and understanding technical
               resources.
             </Typography>
-            <ContactsInfo />
-            <SocialButtons />
+            <Box py={3}>
+              <ContactsInfo />
+            </Box>
+            <Box py={3}>
+              <SocialButtons />
+            </Box>
             <Box py={3}>
               <QuoteText />
             </Box>
