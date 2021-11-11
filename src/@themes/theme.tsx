@@ -26,14 +26,11 @@ const FRONT_COLORS = {
   },
 };
 
-/**
- * Material UI theme config for "Light Mode"
- */
 const LIGHT_THEME = {
   palette: {
     type: 'light' as PaletteType,
     background: {
-      paper: '#f5f5f5', // Gray 100 - Background of "Paper" based component
+      paper: '#f5f5f5',
       default: '#FFFFFF',
     },
     primary: {
@@ -52,22 +49,19 @@ const LIGHT_THEME = {
   },
 };
 
-/**
- * Material UI theme config for "Dark Mode"
- */
 const DARK_THEME = {
   palette: {
     type: 'dark' as PaletteType,
     background: {
-      paper: '#424242', // Gray 800 - Background of "Paper" based component
+      paper: '#424242',
       default: '#303030',
     },
     primary: {
-      main: '#81c784', // Green 300
+      main: '#81c784',
       contrastText: '#000000',
     },
     secondary: {
-      main: '#ffb74d', // Orange 300
+      main: '#ffb74d',
       contrastText: '#000',
     },
     ...FRONT_COLORS,
@@ -78,7 +72,7 @@ const DEEP_PURPLE_AMBER_THEME = {
   palette: {
     type: 'light' as PaletteType,
     background: {
-      paper: '#f5f5f5', // Gray 100 - Background of "Paper" based component
+      paper: '#f5f5f5',
       default: '#FFFFFF',
     },
     primary: {
@@ -97,15 +91,15 @@ const PINK_BLUE_GREY_THEME = {
   palette: {
     type: 'dark' as PaletteType,
     background: {
-      paper: '#424242', // Gray 800 - Background of "Paper" based component
+      paper: '#424242',
       default: '#303030',
     },
     primary: {
-      main: '#e91e63;', // Green 300
+      main: '#e91e63;',
       contrastText: '#000000',
     },
     secondary: {
-      main: '#607d8b;', // Orange 300
+      main: '#607d8b;',
       contrastText: '#000',
     },
     ...FRONT_COLORS,
