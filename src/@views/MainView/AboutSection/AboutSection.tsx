@@ -9,13 +9,15 @@ import {
 } from '@material-ui/core';
 import React from 'react';
 import SectionTitle from '../../../@components/UI/SectionTitle';
-import ContactsInfo from './ContactsInfo';
+import { ContactsInfo, SocialButtons, QuoteText } from './Blocks';
 
 const useStyles = makeStyles((theme: Theme) => ({
   avatarBox: {
     display: 'flex',
     justifyContent: 'center',
-    borderRadius: 4,
+    '& img': {
+      borderRadius: 4,
+    },
     [theme.breakpoints.up('md')]: {
       justifyContent: 'right',
     },
@@ -28,6 +30,11 @@ const useStyles = makeStyles((theme: Theme) => ({
   description: {
     color: alpha(theme.palette.text.primary, 0.8),
   },
+  itemStyle: {
+    [theme.breakpoints.down('sm')]: {
+      order: 2,
+    },
+  },
 }));
 
 const AboutSection: React.FC = () => {
@@ -36,7 +43,7 @@ const AboutSection: React.FC = () => {
     <Container maxWidth="lg">
       <Box py={3}>
         <Grid container spacing={4}>
-          <Grid item xs={12} sm={8} md={8}>
+          <Grid item xs={12} md={8} className={classes.itemStyle}>
             <SectionTitle>About me</SectionTitle>
             <Typography
               className={classes.description}
@@ -53,8 +60,12 @@ const AboutSection: React.FC = () => {
               resources.
             </Typography>
             <ContactsInfo />
+            <SocialButtons />
+            <Box py={3}>
+              <QuoteText />
+            </Box>
           </Grid>
-          <Grid item xs={12} sm={4} md={4}>
+          <Grid item xs={12} md={4}>
             <Box className={classes.avatarBox}>
               <img
                 className={classes.avatar}
