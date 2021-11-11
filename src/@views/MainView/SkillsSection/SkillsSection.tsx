@@ -1,5 +1,6 @@
 import {
   alpha,
+  Box,
   Container,
   Grid,
   makeStyles,
@@ -11,9 +12,23 @@ import React from 'react';
 import SectionTitle from '../../../@components/UI/SectionTitle';
 
 const useStyles = makeStyles((theme: Theme) => ({
+  titleBlock: {
+    [theme.breakpoints.down('sm')]: {
+      textAlign: 'center',
+    },
+  },
   description: {
     color: alpha(theme.palette.text.primary, 0.5),
     fontWeight: 400,
+  },
+  skillTitle: {
+    fontSize: '1.5rem',
+    paddingTop: 16,
+    marginBottom: 11,
+  },
+  skillDesc: {
+    fontSize: '1.2rem',
+    color: alpha(theme.palette.text.primary, 0.5),
   },
 }));
 
@@ -24,70 +39,102 @@ const SkillsSection: React.FC = () => {
       <Grid container spacing={4}>
         {/* 1 */}
         <Grid item xs={12} sm={12} md={4}>
-          <SectionTitle>Skills</SectionTitle>
-          <Typography
-            className={classes.description}
-            variant="h6"
-            color="inherit"
-            paragraph
-          >
-            I enjoy learning new things about web development and putting that
-            into practice.
-          </Typography>
-          <EmojiObjectsIcon style={{ fontSize: 72 }} color="primary" />
+          <Box className={classes.titleBlock}>
+            <SectionTitle>Skills</SectionTitle>
+            <Typography
+              className={classes.description}
+              variant="h6"
+              color="inherit"
+              paragraph
+            >
+              I enjoy learning new things about web development and putting that
+              into practice.
+            </Typography>
+            <EmojiObjectsIcon style={{ fontSize: 72 }} color="primary" />
+          </Box>
         </Grid>
         {/* 2 */}
-        <Grid container item xs={12} sm={12} md={4} spacing={4}>
-          <Grid item xs={12}>
-            <SectionTitle>Skills</SectionTitle>
+        <Grid container item xs={12} sm={12} md={8}>
+          <Grid item xs={12} sm={6}>
             <Typography
-              className={classes.description}
+              className={classes.skillTitle}
               variant="h6"
               color="inherit"
               paragraph
             >
-              1
+              Back-end
             </Typography>
-            <EmojiObjectsIcon style={{ fontSize: 72 }} color="primary" />
+            <Typography
+              className={classes.skillDesc}
+              variant="h6"
+              color="inherit"
+              paragraph
+            >
+              NodeJS/ExpressJS/NestJS
+            </Typography>
           </Grid>
-          <Grid item xs={12}>
-            <SectionTitle>Skills</SectionTitle>
+          <Grid item xs={12} sm={6}>
             <Typography
-              className={classes.description}
+              className={classes.skillTitle}
               variant="h6"
               color="inherit"
               paragraph
             >
-              2
+              Working with layouts
             </Typography>
-            <EmojiObjectsIcon style={{ fontSize: 72 }} color="primary" />
+            <Typography
+              className={classes.skillDesc}
+              variant="h6"
+              color="inherit"
+              paragraph
+            >
+              Photoshop(basic knowleges)
+              <br />
+              Zeplin/Figma
+            </Typography>
           </Grid>
-        </Grid>
-        {/* 3 */}
-        <Grid container item xs={12} sm={12} md={4} spacing={4}>
-          <Grid item xs={12}>
-            <SectionTitle>Skills</SectionTitle>
+          {/* </Grid> */}
+          {/* 3 */}
+          {/* <Grid container item xs={12} sm={12} md={4} spacing={4}> */}
+          <Grid item xs={12} sm={6}>
             <Typography
-              className={classes.description}
+              className={classes.skillTitle}
               variant="h6"
               color="inherit"
               paragraph
             >
-              1
+              Markup & Styling
             </Typography>
-            <EmojiObjectsIcon style={{ fontSize: 72 }} color="primary" />
+            <Typography
+              className={classes.skillDesc}
+              variant="h6"
+              color="inherit"
+              paragraph
+            >
+              HTML, CSS, SASS
+              <br />
+              Bootstrap/AntD/MaterialUI
+            </Typography>
           </Grid>
-          <Grid item xs={12}>
-            <SectionTitle>Skills</SectionTitle>
+          <Grid item xs={12} sm={6}>
             <Typography
-              className={classes.description}
+              className={classes.skillTitle}
               variant="h6"
               color="inherit"
               paragraph
             >
-              2
+              Front-end(main direction)
             </Typography>
-            <EmojiObjectsIcon style={{ fontSize: 72 }} color="primary" />
+            <Typography
+              className={classes.skillDesc}
+              variant="h6"
+              color="inherit"
+              paragraph
+            >
+              JavaScript(ES@next/TypeScript)
+              <br />
+              ReactJS&Redux(Redux Toolkit)
+            </Typography>
           </Grid>
         </Grid>
       </Grid>
