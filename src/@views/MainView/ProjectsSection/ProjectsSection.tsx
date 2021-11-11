@@ -1,26 +1,24 @@
 import {
-  Box,
   Button,
   Card,
   CardActions,
   CardContent,
   CardMedia,
   Container,
-  Divider,
   Grid,
   makeStyles,
-  Paper,
   Typography,
 } from '@material-ui/core';
-import { Search } from '@material-ui/icons';
+import { nanoid } from '@reduxjs/toolkit';
 import React from 'react';
-import CurrentWeather from '../../../@components/CurrentWeather';
-import Forecast from '../../../@components/Forecast';
+import movieAppImg from '../../../@assets/images/movie-app-img.png';
+import pixabayAppImg from '../../../@assets/images/pixabay-img.png';
+import weatherAppImg from '../../../@assets/images/weahter-app-img.png';
 import SectionTitle from '../../../@components/UI/SectionTitle';
+import { ProjectType } from '../../../@types';
 
 const useStyles = makeStyles({
   root: {
-    // maxWidth: 345,
     height: '100%',
     display: 'flex',
     flexDirection: 'column',
@@ -35,57 +33,72 @@ const useStyles = makeStyles({
 
 const ProjectsSection: React.FC = () => {
   const classes = useStyles();
-  const cards = [{}, {}, {}] as any;
+  const cards: ProjectType[] = [
+    {
+      thumbnail: movieAppImg,
+      title: 'MovieDB App',
+      desc: 'Search, See primary information, See trailers of different movies.',
+      codeLink: 'https://github.com/theobroma/movie-app',
+      demoLink: 'https://thirsty-swirles-283e34.netlify.app/',
+    },
+    {
+      thumbnail: weatherAppImg,
+      title: 'Weather App',
+      desc: 'It is designed display your current and 3 day forecast weather.',
+      codeLink: 'https://github.com/theobroma/weather-app',
+      demoLink: 'https://theobroma.github.io/weather-app/',
+    },
+    {
+      thumbnail: pixabayAppImg,
+      title: 'PixaBay Image Finder',
+      desc: ' App to find images utilizing the PixaBay API',
+      codeLink: 'https://github.com/theobroma/pixabay-hooks-images',
+      demoLink: 'https://theobroma.github.io/pixabay-hooks-images/',
+    },
+  ];
   return (
     <>
       <Container maxWidth="lg">
-        {/* <Grid container spacing={3} style={{ padding: 3 }}>
-        <Grid item xs={12}>
-          <Box mb={1}>
-            <Paper elevation={3}>
-              fdfdfdf
-              <Search />
-            </Paper>
-          </Box>
-        </Grid>
-        <Grid item xs={12}>
-          <Box mb={1}>
-            <Paper elevation={3}>
-              <CurrentWeather />
-            </Paper>
-          </Box>
-        </Grid>
-        <Grid item xs={12}>
-          <Box mb={1}>
-            <Paper elevation={3}>
-              <Forecast />
-            </Paper>
-          </Box>
-        </Grid>
-      </Grid> */}
-        <SectionTitle>SectionTitle</SectionTitle>
+        <SectionTitle>Projects</SectionTitle>
         <Grid container spacing={4}>
-          {cards.map((card: any) => (
-            <Grid item key={card} xs={12} sm={12} md={4}>
+          {cards.map((card) => (
+            <Grid item key={nanoid()} xs={12} sm={12} md={4}>
               <Card className={classes.root}>
                 <CardMedia
                   className={classes.media}
+                  height="185"
                   component="img"
-                  image="https://source.unsplash.com/random"
+                  //   image="https://source.unsplash.com/random"
+                  image={card.thumbnail}
                   alt="random"
                 />
                 <CardContent className={classes.content}>
                   <Typography gutterBottom variant="h5" component="h2">
-                    Heading
+                    {card.title}
                   </Typography>
-                  <Typography>
-                    This is a media card. You can use this section to describe
-                    the content.
-                  </Typography>
+                  <Typography>{card.desc}</Typography>
                 </CardContent>
                 <CardActions>
-                  <Button size="small">View</Button>
-                  <Button size="small">Edit</Button>
+                  <Button
+                    variant="contained"
+                    size="small"
+                    // startIcon={<EmailIcon />}
+                    color="primary"
+                    target="__blank"
+                    href={card.codeLink}
+                  >
+                    Code
+                  </Button>
+                  <Button
+                    variant="contained"
+                    size="small"
+                    // startIcon={<EmailIcon />}
+                    color="secondary"
+                    target="__blank"
+                    href={card.demoLink}
+                  >
+                    Demo
+                  </Button>
                 </CardActions>
               </Card>
             </Grid>

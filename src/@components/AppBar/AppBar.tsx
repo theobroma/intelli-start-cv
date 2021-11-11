@@ -14,7 +14,7 @@ export const SimpleAppBar: React.FC = () => {
         <Container maxWidth="lg">
           <Toolbar style={{ padding: 0 }}>
             <Typography className={classes.title} variant="h6" noWrap>
-              Weather App
+              Portfolio
             </Typography>
             <div className={classes.grow} />
             <ThemeMenu />
