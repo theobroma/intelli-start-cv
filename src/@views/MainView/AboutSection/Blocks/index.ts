@@ -1,4 +1,4 @@
-import { ContactsInfo } from './ContactsInfo';
+import ContactsInfo from './ContactsInfo';
 import { QuoteText } from './QuoteText';
 import { SocialButtons } from './SocialButtons';
 
