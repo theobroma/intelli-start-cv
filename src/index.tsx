@@ -3,7 +3,7 @@ import { render } from 'react-dom';
 import './index.css';
 import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
-import { AppContainer } from './#/App';
+import { AppContainer } from './@routes/App';
 import { store, persistor } from './configureStore';
 import LoadingPage from './@components/UI/LoadingPage';
 import { SnackBarProvider } from './@components/UI/SnackBar';
@@ -24,11 +24,7 @@ const rootEl = document.getElementById('root');
 render(
   <React.StrictMode>
     <Provider store={store}>
-      <PersistGate
-        loading={<LoadingPage />}
-        persistor={persistor}
-        onBeforeLift={() => new Promise((resolve) => setTimeout(resolve, 10))} // delay
-      >
+      <PersistGate loading={<LoadingPage />} persistor={persistor}>
         <AppThemeProvider>
           <SnackBarProvider>
             <AppContainer />
