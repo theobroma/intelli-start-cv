@@ -1,6 +1,7 @@
 import {
   alpha,
   Box,
+  Button,
   Container,
   Divider,
   Grid,
@@ -8,6 +9,7 @@ import {
   Theme,
   Typography,
 } from '@material-ui/core';
+import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
 import React from 'react';
 import SectionTitle from '../../../@components/UI/SectionTitle';
 import { ContactsInfo, SocialButtons, QuoteText } from './Blocks';
@@ -16,11 +18,16 @@ const useStyles = makeStyles((theme: Theme) => ({
   root: {
     // backgroundColor: '#2b2b2b',
   },
+  button: {
+    margin: theme.spacing(1),
+  },
   avatarBox: {
     display: 'flex',
     justifyContent: 'center',
     '& img': {
-      borderRadius: 4,
+      width: 200,
+      height: 200,
+      borderRadius: '5%',
     },
     [theme.breakpoints.up('md')]: {
       justifyContent: 'right',
@@ -48,7 +55,16 @@ const AboutSection: React.FC = () => {
       <Container maxWidth="lg">
         <Box py={3}>
           <Grid container spacing={4}>
-            <Grid item xs={12} md={8} className={classes.itemStyle}>
+            <Grid item xs={12} md={3}>
+              <Box className={classes.avatarBox}>
+                <img
+                  className={classes.avatar}
+                  src="https://avatars.githubusercontent.com/u/4540573?v=4"
+                  alt="avatar"
+                />
+              </Box>
+            </Grid>
+            <Grid item xs={12} md={9} className={classes.itemStyle}>
               <SectionTitle>About me</SectionTitle>
               <Typography
                 className={classes.description}
@@ -72,15 +88,6 @@ const AboutSection: React.FC = () => {
               </Box>
               <Box py={3}>
                 <QuoteText />
-              </Box>
-            </Grid>
-            <Grid item xs={12} md={4}>
-              <Box className={classes.avatarBox}>
-                <img
-                  className={classes.avatar}
-                  src="https://avatars.githubusercontent.com/u/4540573?v=4"
-                  alt="avatar"
-                />
               </Box>
             </Grid>
           </Grid>
