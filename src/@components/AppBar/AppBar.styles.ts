@@ -8,6 +8,7 @@ export const useStyles = makeStyles((theme: Theme) => {
       },
       title: {
         display: 'none',
+        color: theme.palette.common.white,
         [theme.breakpoints.up('sm')]: {
           display: 'block',
         },

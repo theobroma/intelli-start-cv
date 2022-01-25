@@ -4,6 +4,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import React from 'react';
 import { useStyles } from './AppBar.styles';
+import AppNavbar from './AppNavbar';
 import ThemeMenu from './ThemeMenu/ThemeMenu';
 
 export const SimpleAppBar: React.FC = () => {
@@ -17,6 +18,7 @@ export const SimpleAppBar: React.FC = () => {
               Portfolio
             </Typography>
             <div className={classes.grow} />
+            <AppNavbar />
             <ThemeMenu />
           </Toolbar>
         </Container>
