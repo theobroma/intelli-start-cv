@@ -1,4 +1,5 @@
 import {
+  Box,
   Button,
   Card,
   CardActions,
@@ -19,6 +20,9 @@ import { ProjectType } from '../../../@types';
 
 const useStyles = makeStyles({
   root: {
+    // backgroundColor: '#2b2b2b',
+  },
+  card: {
     height: '100%',
     display: 'flex',
     flexDirection: 'column',
@@ -57,53 +61,55 @@ const ProjectsSection: React.FC = () => {
     },
   ];
   return (
-    <Container maxWidth="lg">
-      <SectionTitle>Projects</SectionTitle>
-      <Grid container spacing={4}>
-        {cards.map((card) => (
-          <Grid item key={nanoid()} xs={12} sm={12} md={4}>
-            <Card className={classes.root}>
-              <CardMedia
-                className={classes.media}
-                height="185"
-                component="img"
-                //   image="https://source.unsplash.com/random"
-                image={card.thumbnail}
-                alt="random"
-              />
-              <CardContent className={classes.content}>
-                <Typography gutterBottom variant="h5" component="h2">
-                  {card.title}
-                </Typography>
-                <Typography>{card.desc}</Typography>
-              </CardContent>
-              <CardActions>
-                <Button
-                  variant="contained"
-                  size="small"
-                  // startIcon={<EmailIcon />}
-                  color="primary"
-                  target="__blank"
-                  href={card.codeLink}
-                >
-                  Code
-                </Button>
-                <Button
-                  variant="contained"
-                  size="small"
-                  // startIcon={<EmailIcon />}
-                  color="secondary"
-                  target="__blank"
-                  href={card.demoLink}
-                >
-                  Demo
-                </Button>
-              </CardActions>
-            </Card>
-          </Grid>
-        ))}
-      </Grid>
-    </Container>
+    <Box py={3} component="section" id="projects" className={classes.root}>
+      <Container maxWidth="lg">
+        <SectionTitle>Projects</SectionTitle>
+        <Grid container spacing={4}>
+          {cards.map((card) => (
+            <Grid item key={nanoid()} xs={12} sm={12} md={4}>
+              <Card className={classes.card}>
+                <CardMedia
+                  className={classes.media}
+                  height="185"
+                  component="img"
+                  //   image="https://source.unsplash.com/random"
+                  image={card.thumbnail}
+                  alt="random"
+                />
+                <CardContent className={classes.content}>
+                  <Typography gutterBottom variant="h5" component="h2">
+                    {card.title}
+                  </Typography>
+                  <Typography>{card.desc}</Typography>
+                </CardContent>
+                <CardActions>
+                  <Button
+                    variant="contained"
+                    size="small"
+                    // startIcon={<EmailIcon />}
+                    color="primary"
+                    target="__blank"
+                    href={card.codeLink}
+                  >
+                    Code
+                  </Button>
+                  <Button
+                    variant="contained"
+                    size="small"
+                    // startIcon={<EmailIcon />}
+                    color="secondary"
+                    target="__blank"
+                    href={card.demoLink}
+                  >
+                    Demo
+                  </Button>
+                </CardActions>
+              </Card>
+            </Grid>
+          ))}
+        </Grid>
+      </Container>
+    </Box>
   );
 };
 
