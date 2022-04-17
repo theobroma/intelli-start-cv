@@ -4,26 +4,33 @@
 
 My personal portfolio which features some of my github projects as well as my resume and technical skills.
 
-## Quick Start
+## :fire: Built With
+
+This project was built using these technologies.
+
+- [React.js v17](https://17.reactjs.org/)
+- [Material UI v4](https://v4.mui.com/ru/)
+
+## 🛠 Quick Start
 
 ```bash
 # Install dependencies
-npm install
+yarn
 
 # Serve on localhost:3000
-npm start
+yarn start
 
 # Build for production
-npm run build
+yarn run build
 
 # Format with prettier
-npm run format
+yarn run format
 
 # Lint with eslint
-npm run lint
+yarn run lint
 ```
 
-## Deploy to GitHub Pages
+## :package: Deploy to GitHub Pages
 
 ```bash
 # Change "homepage"
