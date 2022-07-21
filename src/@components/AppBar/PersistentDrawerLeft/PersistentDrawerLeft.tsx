@@ -1,3 +1,4 @@
+import { Typography } from '@material-ui/core';
 import AppBar from '@material-ui/core/AppBar';
 import Divider from '@material-ui/core/Divider';
 import Drawer from '@material-ui/core/Drawer';
@@ -9,7 +10,9 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import MenuIcon from '@material-ui/icons/Menu';
 import clsx from 'clsx';
 import React, { useState } from 'react';
+import AppNavbar from '../AppNavbar';
 import NestedList from '../NestedList';
+import ThemeMenu from '../ThemeMenu/ThemeMenu';
 import { useStyles } from './PersistentDrawerLeft.styles';
 
 const PersistentDrawerLeft: React.FC = ({ children }) => {
@@ -49,8 +52,13 @@ const PersistentDrawerLeft: React.FC = ({ children }) => {
             <MenuIcon />
           </IconButton>
           {/* brand name */}
+          <Typography className={classes.title} variant="h6" noWrap>
+            Portfolio
+          </Typography>
           <div className={classes.grow} />
           {/* icons right */}
+          <AppNavbar />
+          <ThemeMenu />
         </Toolbar>
       </AppBar>
       {/* Drawer */}

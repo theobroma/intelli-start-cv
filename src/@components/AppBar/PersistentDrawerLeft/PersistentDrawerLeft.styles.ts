@@ -9,6 +9,13 @@ export const useStyles = makeStyles((theme: Theme) => ({
   grow: {
     flexGrow: 1,
   },
+  title: {
+    display: 'none',
+    color: theme.palette.common.white,
+    [theme.breakpoints.up('sm')]: {
+      display: 'block',
+    },
+  },
   appBar: {
     transition: theme.transitions.create(['margin', 'width'], {
       easing: theme.transitions.easing.sharp,
