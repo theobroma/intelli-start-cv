@@ -4,13 +4,12 @@ import Drawer from '@material-ui/core/Drawer';
 import IconButton from '@material-ui/core/IconButton';
 import { useTheme } from '@material-ui/core/styles';
 import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import MenuIcon from '@material-ui/icons/Menu';
-import SearchIcon from '@material-ui/icons/Search';
 import clsx from 'clsx';
 import React, { useState } from 'react';
+import NestedList from '../NestedList';
 import { useStyles } from './PersistentDrawerLeft.styles';
 
 const PersistentDrawerLeft: React.FC = ({ children }) => {
@@ -94,7 +93,7 @@ const PersistentDrawerLeft: React.FC = ({ children }) => {
           </IconButton>
         </div>
         <Divider />
-        {/* <NestedList /> */}
+        <NestedList handleDrawerClose={handleDrawerClose} />
       </Drawer>
       {/* Main */}
       <main
