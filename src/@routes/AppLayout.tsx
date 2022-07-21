@@ -1,17 +1,18 @@
 import { Box } from '@material-ui/core';
 import React from 'react';
-import SimpleAppBar from '../@components/AppBar';
+// import SimpleAppBar from '../@components/AppBar';
+import PersistentDrawerLeft from '../@components/AppBar/PersistentDrawerLeft';
 import Footer from '../@components/Footer';
 
 export const AppLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="HolyGrail">
-      <SimpleAppBar />
-      <main className="HolyGrail-content">
+      {/* <SimpleAppBar /> */}
+      <PersistentDrawerLeft>
         <Box mt={2} mb={2}>
           {children}
         </Box>
-      </main>
+      </PersistentDrawerLeft>
       <Footer />
     </div>
   );
