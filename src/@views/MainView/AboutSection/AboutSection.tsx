@@ -1,7 +1,6 @@
 import {
   alpha,
   Box,
-  Button,
   Container,
   Divider,
   Grid,
@@ -9,10 +8,9 @@ import {
   Theme,
   Typography,
 } from '@material-ui/core';
-import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
 import React from 'react';
 import SectionTitle from '../../../@components/UI/SectionTitle';
-import { ContactsInfo, SocialButtons, QuoteText } from './Blocks';
+import { ContactsInfo, QuoteText, SocialButtons } from './Blocks';
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {

@@ -26,7 +26,7 @@ const AppNavbar = () => {
     <List component="nav" className={classes.root}>
       <ListItem component="div">
         <ListItemText inset>
-          <MUILink href="#home" variant="h6" className={classes.link}>
+          <MUILink href="#" variant="h6" className={classes.link}>
             Home
           </MUILink>
         </ListItemText>

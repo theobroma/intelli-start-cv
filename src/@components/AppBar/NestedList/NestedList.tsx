@@ -34,7 +34,7 @@ const NestedList = ({
     <List>
       <ListItem onClick={() => handleDrawerClose()}>
         <ListItemText>
-          <MUILink href="#home" variant="h6" className={classes.link}>
+          <MUILink href="#" variant="h6" className={classes.link}>
             Home
           </MUILink>
         </ListItemText>
