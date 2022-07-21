@@ -16,7 +16,6 @@ const PersistentDrawerLeft: React.FC = ({ children }) => {
   const classes = useStyles();
   const theme = useTheme();
   const [open, setOpen] = useState(false);
-  // const [showMobileSearch, setShowMobileSearch] = useState(false);
 
   const handleDrawerOpen = () => {
     setOpen(true);
@@ -49,29 +48,10 @@ const PersistentDrawerLeft: React.FC = ({ children }) => {
           >
             <MenuIcon />
           </IconButton>
-          {/* <Link
-            to={{ pathname: '/' }}
-            style={{
-              color: 'white',
-              textDecoration: 'none',
-            }}
-          >
-            <Typography variant="h6" noWrap>
-              MovieDB App
-            </Typography>
-          </Link> */}
+          {/* brand name */}
           <div className={classes.grow} />
-          {/* <Badges /> */}
-          {/* <IconButton
-            onClick={() => setShowMobileSearch(!showMobileSearch)}
-            color="inherit"
-          >
-            <SearchIcon />
-          </IconButton> */}
-          {/* <ThemeSwitch /> */}
-          {/* <LanguageMenu /> */}
+          {/* icons right */}
         </Toolbar>
-        {/* {showMobileSearch && <AppSearch />} */}
       </AppBar>
       {/* Drawer */}
       <Drawer
