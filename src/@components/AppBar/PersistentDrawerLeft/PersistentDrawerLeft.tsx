@@ -1,4 +1,4 @@
-import { Typography } from '@material-ui/core';
+import { Typography, useMediaQuery } from '@material-ui/core';
 import AppBar from '@material-ui/core/AppBar';
 import Divider from '@material-ui/core/Divider';
 import Drawer from '@material-ui/core/Drawer';
@@ -19,6 +19,7 @@ const PersistentDrawerLeft: React.FC = ({ children }) => {
   const classes = useStyles();
   const theme = useTheme();
   const [open, setOpen] = useState(false);
+  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
   const handleDrawerOpen = () => {
     setOpen(true);
@@ -42,22 +43,24 @@ const PersistentDrawerLeft: React.FC = ({ children }) => {
         })}
       >
         <Toolbar>
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            onClick={handleDrawerOpen}
-            edge="start"
-            className={clsx(classes.menuButton, open && classes.hide)}
-          >
-            <MenuIcon />
-          </IconButton>
+          {isMobile && (
+            <IconButton
+              color="inherit"
+              aria-label="open drawer"
+              onClick={handleDrawerOpen}
+              edge="start"
+              className={clsx(classes.menuButton, open && classes.hide)}
+            >
+              <MenuIcon />
+            </IconButton>
+          )}
           {/* brand name */}
           <Typography className={classes.title} variant="h6" noWrap>
             Portfolio
           </Typography>
           <div className={classes.grow} />
           {/* icons right */}
-          <AppNavbar />
+          {!isMobile && <AppNavbar />}
           <ThemeMenu />
         </Toolbar>
       </AppBar>
