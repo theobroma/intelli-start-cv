@@ -1,4 +1,4 @@
-import { Typography, useMediaQuery } from '@material-ui/core';
+import { Container, Typography, useMediaQuery } from '@material-ui/core';
 import AppBar from '@material-ui/core/AppBar';
 import Divider from '@material-ui/core/Divider';
 import Drawer from '@material-ui/core/Drawer';
@@ -42,27 +42,29 @@ const PersistentDrawerLeft: React.FC = ({ children }) => {
           [classes.appBarShift]: open,
         })}
       >
-        <Toolbar>
-          {isMobile && (
-            <IconButton
-              color="inherit"
-              aria-label="open drawer"
-              onClick={handleDrawerOpen}
-              edge="start"
-              className={clsx(classes.menuButton, open && classes.hide)}
-            >
-              <MenuIcon />
-            </IconButton>
-          )}
-          {/* brand name */}
-          <Typography className={classes.title} variant="h6" noWrap>
-            Portfolio
-          </Typography>
-          <div className={classes.grow} />
-          {/* icons right */}
-          {!isMobile && <AppNavbar />}
-          <ThemeMenu />
-        </Toolbar>
+        <Container maxWidth="lg">
+          <Toolbar style={{ padding: 0 }}>
+            {isMobile && (
+              <IconButton
+                color="inherit"
+                aria-label="open drawer"
+                onClick={handleDrawerOpen}
+                edge="start"
+                className={clsx(classes.menuButton, open && classes.hide)}
+              >
+                <MenuIcon />
+              </IconButton>
+            )}
+            {/* brand name */}
+            <Typography className={classes.title} variant="h6" noWrap>
+              Portfolio
+            </Typography>
+            <div className={classes.grow} />
+            {/* icons right */}
+            {!isMobile && <AppNavbar />}
+            <ThemeMenu />
+          </Toolbar>
+        </Container>
       </AppBar>
       {/* Drawer */}
       <Drawer
