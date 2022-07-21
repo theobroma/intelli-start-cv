@@ -5,6 +5,7 @@ import React from 'react';
 interface Props {
   title: string;
   icon: React.ReactElement;
+  children: React.ReactNode;
 }
 
 const useStyles = makeStyles((theme: Theme) => ({
@@ -26,7 +27,7 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
 }));
 
-export const ContactsItem: React.FC<Props> = ({ title, icon, children }) => {
+export const ContactsItem = ({ title, icon, children }: Props) => {
   const classes = useStyles();
   return (
     <Box my={3} className={classes.root}>

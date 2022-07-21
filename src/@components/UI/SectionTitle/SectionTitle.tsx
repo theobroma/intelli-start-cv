@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
 }));
 
-export const SectionTitle: React.FC = ({ children }) => {
+export const SectionTitle = ({ children }: { children: React.ReactNode }) => {
   const classes = useStyles();
   return (
     <Typography

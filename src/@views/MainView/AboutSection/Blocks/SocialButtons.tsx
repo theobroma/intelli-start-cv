@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
 }));
 
-export const SocialButtons: React.FC = () => {
+export const SocialButtons = () => {
   const classes = useStyles();
 
   return (

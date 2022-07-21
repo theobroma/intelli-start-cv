@@ -7,7 +7,7 @@ import { useStyles } from './AppBar.styles';
 import AppNavbar from './AppNavbar';
 import ThemeMenu from './ThemeMenu/ThemeMenu';
 
-export const SimpleAppBar: React.FC = () => {
+export const SimpleAppBar = () => {
   const classes = useStyles();
   return (
     <div className={classes.grow}>

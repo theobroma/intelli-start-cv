@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
 }));
 
-export const QuoteText: React.FC = () => {
+export const QuoteText = () => {
   const classes = useStyles();
   return (
     <blockquote className={classes.blockquote}>

@@ -4,7 +4,7 @@ import ExperienceSection from './ExperienceSection';
 import ProjectsSection from './ProjectsSection';
 import SkillsSection from './SkillsSection';
 
-const MainView: React.FC = () => {
+const MainView = () => {
   return (
     <>
       <AboutSection />

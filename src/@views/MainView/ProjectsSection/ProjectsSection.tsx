@@ -35,7 +35,7 @@ const useStyles = makeStyles({
   },
 });
 
-const ProjectsSection: React.FC = () => {
+const ProjectsSection = () => {
   const classes = useStyles();
   const cards: ProjectType[] = [
     {

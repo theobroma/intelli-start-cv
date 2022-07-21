@@ -36,7 +36,7 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
 }));
 
-const SkillsSection: React.FC = () => {
+const SkillsSection = () => {
   const classes = useStyles();
   return (
     <Box py={3} component="section" id="skills" className={classes.root}>
