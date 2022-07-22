@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/intelli-start-cv/static/css/main.d664affb.css",
-    "main.js": "/intelli-start-cv/static/js/main.cc497663.js",
+    "main.js": "/intelli-start-cv/static/js/main.1e2bc0f3.js",
     "static/js/787.11d769eb.chunk.js": "/intelli-start-cv/static/js/787.11d769eb.chunk.js",
     "static/media/pixabay-img.png": "/intelli-start-cv/static/media/pixabay-img.be1784fe92f2fb9da344.png",
     "static/media/movie-app-img.png": "/intelli-start-cv/static/media/movie-app-img.72541b5aa8b2ef377fbd.png",
@@ -40,11 +40,11 @@
     "static/media/roboto-greek-ext-700-normal.woff2": "/intelli-start-cv/static/media/roboto-greek-ext-700-normal.bd9854c751441ccc1a70.woff2",
     "index.html": "/intelli-start-cv/index.html",
     "main.d664affb.css.map": "/intelli-start-cv/static/css/main.d664affb.css.map",
-    "main.cc497663.js.map": "/intelli-start-cv/static/js/main.cc497663.js.map",
+    "main.1e2bc0f3.js.map": "/intelli-start-cv/static/js/main.1e2bc0f3.js.map",
     "787.11d769eb.chunk.js.map": "/intelli-start-cv/static/js/787.11d769eb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d664affb.css",
-    "static/js/main.cc497663.js"
+    "static/js/main.1e2bc0f3.js"
   ]
 }
