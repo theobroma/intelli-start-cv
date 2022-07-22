@@ -19,14 +19,17 @@ const useStyles = makeStyles((theme: Theme) => ({
   linkedinBtn: {
     backgroundColor: '#0a66c2',
     margin: 6,
+    color: theme.palette.common.white,
   },
   gmailBtn: {
     backgroundColor: '#ea4335',
     margin: 6,
+    color: theme.palette.common.white,
   },
   telegramBtn: {
     backgroundColor: '#0088cc',
     margin: 6,
+    color: theme.palette.common.white,
   },
 }));
 

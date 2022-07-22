@@ -46,7 +46,7 @@ const PersistentDrawerLeft: React.FC = ({ children }) => {
           <Toolbar style={{ padding: 0 }}>
             {isMobile && (
               <IconButton
-                color="inherit"
+                // color="inherit"
                 aria-label="open drawer"
                 onClick={handleDrawerOpen}
                 edge="start"

@@ -1,5 +1,12 @@
 import React from 'react';
-import { withStyles, MenuProps, Menu, MenuItem } from '@material-ui/core';
+import {
+  withStyles,
+  MenuProps,
+  Menu,
+  MenuItem,
+  makeStyles,
+  Theme,
+} from '@material-ui/core';
 
 export const StyledMenu = withStyles({
   paper: {
@@ -36,3 +43,9 @@ export const StyledMenuItem = withStyles((theme) => ({
     },
   },
 }))(MenuItem);
+
+export const useStyles = makeStyles((theme: Theme) => ({
+  iconBtn: {
+    color: theme.palette.common.white,
+  },
+}));

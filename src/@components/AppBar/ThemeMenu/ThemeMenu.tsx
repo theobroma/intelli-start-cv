@@ -10,7 +10,7 @@ import { useAppDispatch, useAppSelector } from '../../../@store/configureStore';
 import { themeSelector } from '../../../@store/ui/selectors';
 import { setThemeAC } from '../../../@store/ui/slice';
 import { ThemeColorsType } from '../../../@types';
-import { StyledMenu, StyledMenuItem } from './ThemeMenu.styles';
+import { StyledMenu, StyledMenuItem, useStyles } from './ThemeMenu.styles';
 
 const options = [
   'light',
@@ -20,6 +20,7 @@ const options = [
 ] as ThemeColorsType[];
 
 const ThemeMenu = () => {
+  const classes = useStyles();
   const dispatch = useAppDispatch();
   const { enqueueSnackbar } = useSnackbar();
   const currentTheme = useAppSelector(themeSelector);
@@ -57,6 +58,7 @@ const ThemeMenu = () => {
         aria-label="more"
         aria-controls="long-menu"
         aria-haspopup="true"
+        className={classes.iconBtn}
         onClick={(e) => handleClickListItem(e)}
       >
         <FormatColorFillIcon />

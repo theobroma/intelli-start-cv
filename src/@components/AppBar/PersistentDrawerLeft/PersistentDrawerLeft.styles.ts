@@ -32,6 +32,7 @@ export const useStyles = makeStyles((theme: Theme) => ({
   },
   menuButton: {
     marginRight: theme.spacing(2),
+    color: theme.palette.common.white,
   },
   hide: {
     display: 'none',
