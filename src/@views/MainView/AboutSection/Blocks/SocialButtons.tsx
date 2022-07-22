@@ -2,6 +2,7 @@ import { Button, makeStyles, Theme, Typography } from '@material-ui/core';
 import EmailIcon from '@material-ui/icons/Email';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import TelegramIcon from '@material-ui/icons/Telegram';
+import clsx from 'clsx';
 import React from 'react';
 
 const useStyles = makeStyles((theme: Theme) => ({
@@ -16,20 +17,27 @@ const useStyles = makeStyles((theme: Theme) => ({
       textAlign: 'center',
     },
   },
-  linkedinBtn: {
-    backgroundColor: '#0a66c2',
+  btn: {
     margin: 6,
     color: theme.palette.common.white,
+    transition: 'all 0.3s',
+    '&:hover': {
+      background: 'rgb(255, 11, 97)',
+      boxShadow: '0px 4px 24px rgba(249, 44, 107, 0.52) !important',
+    },
+    '&:active': {
+      background: 'rgb(255, 45, 80)',
+      boxShadow: '0px 4px 24px rgba(249, 44, 107, 0.52) !important',
+    },
+  },
+  linkedinBtn: {
+    backgroundColor: '#0a66c2',
   },
   gmailBtn: {
     backgroundColor: '#ea4335',
-    margin: 6,
-    color: theme.palette.common.white,
   },
   telegramBtn: {
     backgroundColor: '#0088cc',
-    margin: 6,
-    color: theme.palette.common.white,
   },
 }));
 
@@ -46,7 +54,7 @@ export const SocialButtons = () => {
         Social:
       </Typography>
       <Button
-        className={classes.linkedinBtn}
+        className={clsx(classes.btn, classes.linkedinBtn)}
         variant="contained"
         startIcon={<LinkedInIcon />}
         target="__blank"
@@ -55,7 +63,7 @@ export const SocialButtons = () => {
         LinkedIn
       </Button>
       <Button
-        className={classes.gmailBtn}
+        className={clsx(classes.btn, classes.gmailBtn)}
         variant="contained"
         startIcon={<EmailIcon />}
         target="__blank"
@@ -64,7 +72,7 @@ export const SocialButtons = () => {
         Gmail
       </Button>
       <Button
-        className={classes.telegramBtn}
+        className={clsx(classes.btn, classes.telegramBtn)}
         variant="contained"
         startIcon={<TelegramIcon />}
         target="__blank"
