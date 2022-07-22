@@ -10,15 +10,8 @@ import {
 } from '@material-ui/core';
 import React from 'react';
 import SectionTitle from '../../../@components/UI/SectionTitle';
-import { ContactsInfo, QuoteText, SocialButtons } from './Blocks';
 
 const useStyles = makeStyles((theme: Theme) => ({
-  root: {
-    // backgroundColor: '#2b2b2b',
-  },
-  button: {
-    margin: theme.spacing(1),
-  },
   avatarBox: {
     display: 'flex',
     justifyContent: 'center',
@@ -49,7 +42,7 @@ const useStyles = makeStyles((theme: Theme) => ({
 const AboutSection = () => {
   const classes = useStyles();
   return (
-    <Box py={3} component="section" id="about" className={classes.root}>
+    <Box py={3} component="section" id="about">
       <Container maxWidth="lg">
         <Box py={3}>
           <Grid container spacing={4}>
@@ -78,15 +71,6 @@ const AboutSection = () => {
                 I am strong enough in reading, writing and understanding
                 technical resources.
               </Typography>
-              <Box py={3}>
-                <ContactsInfo />
-              </Box>
-              <Box py={3}>
-                <SocialButtons />
-              </Box>
-              <Box py={3}>
-                <QuoteText />
-              </Box>
             </Grid>
           </Grid>
         </Box>

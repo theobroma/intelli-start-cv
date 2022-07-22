@@ -32,8 +32,8 @@ const AppNavbar = () => {
         </ListItemText>
 
         <ListItemText inset>
-          <MUILink href="#about" variant="h6" className={classes.link}>
-            About
+          <MUILink href="#contacts" variant="h6" className={classes.link}>
+            Contacts
           </MUILink>
         </ListItemText>
 

@@ -8,7 +8,6 @@ import PhoneIcon from '@material-ui/icons/Phone';
 import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
 import WorkIcon from '@material-ui/icons/Work';
 import React from 'react';
-import SectionTitle from '../../../../../@components/UI/SectionTitle';
 import { ContactsItem } from './ContactsItem';
 
 const useStyles = makeStyles((theme: Theme) => ({
@@ -29,7 +28,6 @@ export const ContactsInfo = () => {
   return (
     <Grid container spacing={4}>
       <Grid item xs={12} md={6}>
-        <SectionTitle>Contact Details</SectionTitle>
         <ContactsItem title="Name:" icon={<PermIdentityIcon />}>
           Oleksandr Syryi
         </ContactsItem>
