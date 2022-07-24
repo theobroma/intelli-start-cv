@@ -1,17 +1,22 @@
-import { createRoot } from 'react-dom/client';
 import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
 
-import './index.css';
 import 'tailwindcss/tailwind.css';
+import './index.css';
 
-import App from './App';
+import AppContainer from '@routes/AppContainer';
+import AppThemeProvider from '@themes/theme';
 
 const container = document.getElementById('root');
 if (container) {
   const root = createRoot(container);
   root.render(
     <StrictMode>
-      <App />
+      <AppThemeProvider>
+        {/* <SnackBarProvider> */}
+        <AppContainer />
+        {/* </SnackBarProvider> */}
+      </AppThemeProvider>
     </StrictMode>
   );
 }

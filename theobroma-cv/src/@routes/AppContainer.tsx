@@ -1,6 +1,6 @@
 import MainView from '@views/MainView/MainView';
 
-function App() {
+function AppContainer() {
   return (
     <div className="App">
       <MainView />
@@ -8,4 +8,4 @@ function App() {
   );
 }
 
-export default App;
+export default AppContainer;
