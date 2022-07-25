@@ -27,6 +27,7 @@
     "analyze": "source-map-explorer 'dist/assets/*.js'"
   },
   "dependencies": {
+    "@emotion/cache": "^11.9.3",
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
     "@mui/material": "^5.9.1",

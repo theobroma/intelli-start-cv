@@ -1,9 +1,12 @@
 import MainView from '@views/MainView/MainView';
+import AppLayout from './AppLayout';
 
 function AppContainer() {
   return (
     <div className="App">
-      <MainView />
+      <AppLayout>
+        <MainView />
+      </AppLayout>
     </div>
   );
 }
