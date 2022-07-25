@@ -1,6 +1,6 @@
 import createCache from '@emotion/cache';
 import { CacheProvider } from '@emotion/react';
-import { PaletteMode } from '@mui/material';
+import { PaletteMode, responsiveFontSizes } from '@mui/material';
 import CssBaseline from '@mui/material/CssBaseline';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import React from 'react';
@@ -95,7 +95,8 @@ const themeMap = {
 const AppThemeProvider = ({ children }: { children?: React.ReactNode }) => {
   // const currentTheme = useAppSelector(themeSelector);
   // const theme = createTheme(themeMap[currentTheme]);
-  const theme = createTheme(LIGHT_THEME);
+  let theme = createTheme(DEEP_PURPLE_AMBER_THEME);
+  theme = responsiveFontSizes(theme);
   return (
     <CacheProvider value={muiCache}>
       <ThemeProvider theme={theme}>

@@ -5,15 +5,15 @@ import { styled } from '@mui/system';
 // import IconButton from '@mui/material/IconButton';
 // import Home from '@mui/icons-material/Home';
 // import MuiNextLink from '@components/MuiNextLink';
-// import Fab from '@mui/material/Fab';
-// import KeyboardArrowUp from '@mui/icons-material/KeyboardArrowUp';
-// import BackToTop from './BackToTop';
-import theme from '@themes/theme';
+import Fab from '@mui/material/Fab';
+import KeyboardArrowUp from '@mui/icons-material/KeyboardArrowUp';
+import BackToTop from './BackToTop';
 import HideOnScroll from './HideOnScroll';
-import Navbar from './Navbar';
-import SideDrawer from './SideDrawer';
+// import Navbar from './Navbar';
+// import SideDrawer from './SideDrawer';
 
-// const Offset = styled('div')(({ theme }) => theme.mixins.toolbar);
+// @ts-ignore:next-line
+const Offset = styled('div')(({ theme }) => theme.mixins.toolbar);
 
 export const navLinks = [
   { title: `home`, path: `/` },
@@ -47,12 +47,12 @@ const Header = () => {
           </Toolbar>
         </AppBar>
       </HideOnScroll>
-      {/* <Offset id="back-to-top-anchor" /> */}
-      {/* <BackToTop>
+      <Offset id="back-to-top-anchor" />
+      <BackToTop>
         <Fab color="secondary" size="large" aria-label="back to top">
           <KeyboardArrowUp />
         </Fab>
-      </BackToTop> */}
+      </BackToTop>
     </>
   );
 };

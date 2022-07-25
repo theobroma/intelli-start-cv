@@ -1,12 +1,15 @@
+import Footer from '@components/Footer';
+import Header from '@components/Header';
 import MainView from '@views/MainView/MainView';
-import AppLayout from './AppLayout';
 
 function AppContainer() {
   return (
     <div className="App">
-      <AppLayout>
-        <MainView />
-      </AppLayout>
+      {/* AppLayout */}
+      <Header />
+      <MainView />
+      <Footer />
+      {/* AppLayout */}
     </div>
   );
 }
