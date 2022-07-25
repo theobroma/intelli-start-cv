@@ -1,5 +1,6 @@
 import AboutSection from './AboutSection';
 import ContactsSection from './ContactsSection';
+import ExperienceSection from './ExperienceSection';
 import SkillsSection from './SkillsSection';
 
 const MainView = () => {
@@ -8,6 +9,7 @@ const MainView = () => {
       <AboutSection />
       <ContactsSection />
       <SkillsSection />
+      <ExperienceSection />
     </>
   );
 };
