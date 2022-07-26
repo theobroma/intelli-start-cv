@@ -11,7 +11,7 @@ import BackToTop from './BackToTop';
 import HideOnScroll from './HideOnScroll';
 import Navbar from './Navbar';
 import { LinksType } from '@types';
-// import SideDrawer from './SideDrawer';
+import SideDrawer from './SideDrawer';
 
 // @ts-ignore:next-line
 const Offset = styled('div')(({ theme }) => theme.mixins.toolbar);
@@ -43,7 +43,7 @@ const Header = () => {
                 </MuiNextLink>
               </IconButton> */}
               <Navbar navLinks={navLinks} />
-              {/* <SideDrawer navLinks={navLinks} /> */}
+              <SideDrawer navLinks={navLinks} />
             </Container>
           </Toolbar>
         </AppBar>
