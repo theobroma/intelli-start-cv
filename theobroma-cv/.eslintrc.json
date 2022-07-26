@@ -24,7 +24,9 @@
     // for testing if eslint works properly,
     // feel free to remove this if you do not need it
     "import/no-unused-modules": [1, { "unusedExports": true }],
-    "@typescript-eslint/ban-ts-comment":1
+    "@typescript-eslint/ban-ts-comment":1,
+    "react/prop-types": 0, // Since we do not use prop-types
+    "react/require-default-props": 0 // Since we do not use prop-types
   },
   "settings": {
     "import/parsers": {

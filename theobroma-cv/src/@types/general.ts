@@ -5,3 +5,8 @@ export type ProjectType = {
   thumbnail: string;
   title: string;
 };
+
+export type LinksType = {
+  title: string;
+  path: string;
+};

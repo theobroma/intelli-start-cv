@@ -9,13 +9,14 @@ import Fab from '@mui/material/Fab';
 import KeyboardArrowUp from '@mui/icons-material/KeyboardArrowUp';
 import BackToTop from './BackToTop';
 import HideOnScroll from './HideOnScroll';
-// import Navbar from './Navbar';
+import Navbar from './Navbar';
+import { LinksType } from '@types';
 // import SideDrawer from './SideDrawer';
 
 // @ts-ignore:next-line
 const Offset = styled('div')(({ theme }) => theme.mixins.toolbar);
 
-export const navLinks = [
+const navLinks: LinksType[] = [
   { title: `home`, path: `/` },
   { title: `about us`, path: `/about-us` },
   { title: `menu`, path: `/menu` },
@@ -41,7 +42,7 @@ const Header = () => {
                   />
                 </MuiNextLink>
               </IconButton> */}
-              {/* <Navbar navLinks={navLinks} /> */}
+              <Navbar navLinks={navLinks} />
               {/* <SideDrawer navLinks={navLinks} /> */}
             </Container>
           </Toolbar>

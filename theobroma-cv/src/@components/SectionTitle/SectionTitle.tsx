@@ -2,7 +2,7 @@ import { makeStyles } from 'tss-react/mui';
 import { Typography } from '@mui/material';
 import React from 'react';
 
-export const useStyles = makeStyles()((theme) => ({
+const useStyles = makeStyles()((theme) => ({
   title: {
     fontSize: '2rem',
   },
@@ -12,7 +12,7 @@ export const useStyles = makeStyles()((theme) => ({
   },
 }));
 
-export const SectionTitle = ({ children }: { children: React.ReactNode }) => {
+const SectionTitle = ({ children }: { children: React.ReactNode }) => {
   const { classes } = useStyles();
   return (
     <Typography className={classes.title} gutterBottom variant="body1" component="h2">
@@ -21,4 +21,5 @@ export const SectionTitle = ({ children }: { children: React.ReactNode }) => {
     </Typography>
   );
 };
+
 export default SectionTitle;
