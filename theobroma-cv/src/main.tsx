@@ -1,7 +1,6 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 
-import 'tailwindcss/tailwind.css';
 import './index.css';
 
 import AppContainer from '@routes/AppContainer';
