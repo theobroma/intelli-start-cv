@@ -43,7 +43,7 @@ const Header = () => {
                 </MuiNextLink>
               </IconButton> */}
               <Navbar navLinks={navLinks} />
-              <SideDrawer navLinks={navLinks} />
+              {/* <SideDrawer navLinks={navLinks} /> */}
             </Container>
           </Toolbar>
         </AppBar>
