@@ -1,7 +1,10 @@
 import React from 'react';
-import { CssBaseline, PaletteType } from '@material-ui/core';
-import { createTheme, ThemeProvider } from '@material-ui/core/styles';
 import { useSelector } from 'react-redux';
+
+import type { PaletteType } from '@material-ui/core';
+import { CssBaseline } from '@material-ui/core';
+import { createTheme, ThemeProvider } from '@material-ui/core/styles';
+
 import { themeSelector } from '../@store/ui/selectors';
 
 /**

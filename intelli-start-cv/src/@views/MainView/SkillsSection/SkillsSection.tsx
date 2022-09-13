@@ -1,3 +1,6 @@
+import React from 'react';
+
+import type { Theme } from '@material-ui/core';
 import {
   alpha,
   Box,
@@ -5,11 +8,10 @@ import {
   Divider,
   Grid,
   makeStyles,
-  Theme,
   Typography,
 } from '@material-ui/core';
 import EmojiObjectsIcon from '@material-ui/icons/EmojiObjects';
-import React from 'react';
+
 import SectionTitle from '../../../@components/UI/SectionTitle';
 
 const useStyles = makeStyles((theme: Theme) => ({

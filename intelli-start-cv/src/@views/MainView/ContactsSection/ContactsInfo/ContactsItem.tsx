@@ -1,6 +1,8 @@
 // https://ozzie.sh/passing-icons-as-props-in-a-consistent-way-using-react
-import { Box, makeStyles, Theme, Typography } from '@material-ui/core';
 import React from 'react';
+
+import type { Theme } from '@material-ui/core';
+import { Box, makeStyles, Typography } from '@material-ui/core';
 
 interface Props {
   title: string;

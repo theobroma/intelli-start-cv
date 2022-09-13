@@ -1,4 +1,7 @@
-import { Box, Button, Grid, makeStyles, Theme } from '@material-ui/core';
+import React from 'react';
+
+import type { Theme } from '@material-ui/core';
+import { Box, Button, Grid, makeStyles } from '@material-ui/core';
 import AlternateEmailIcon from '@material-ui/icons/AlternateEmail';
 import CakeIcon from '@material-ui/icons/Cake';
 import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
@@ -7,7 +10,7 @@ import PermIdentityIcon from '@material-ui/icons/PermIdentity';
 import PhoneIcon from '@material-ui/icons/Phone';
 import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
 import WorkIcon from '@material-ui/icons/Work';
-import React from 'react';
+
 import { ContactsItem } from './ContactsItem';
 
 const useStyles = makeStyles((theme: Theme) => ({

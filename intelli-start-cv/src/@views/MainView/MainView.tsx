@@ -1,6 +1,7 @@
 import React from 'react';
-import AboutSection from './AboutSection';
+
 import ContactsSection from './ContactsSection/ContactsSection';
+import AboutSection from './AboutSection';
 import ExperienceSection from './ExperienceSection';
 import ProjectsSection from './ProjectsSection';
 import SkillsSection from './SkillsSection';

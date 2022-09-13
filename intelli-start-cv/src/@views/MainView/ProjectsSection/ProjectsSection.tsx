@@ -1,3 +1,5 @@
+import React from 'react';
+
 import {
   Box,
   Button,
@@ -11,12 +13,12 @@ import {
   Typography,
 } from '@material-ui/core';
 import { nanoid } from '@reduxjs/toolkit';
-import React from 'react';
+
 import movieAppImg from '../../../@assets/images/movie-app-img.png';
 import pixabayAppImg from '../../../@assets/images/pixabay-img.png';
 import weatherAppImg from '../../../@assets/images/weahter-app-img.png';
 import SectionTitle from '../../../@components/UI/SectionTitle';
-import { ProjectType } from '../../../@types';
+import type { ProjectType } from '../../../@types';
 
 const useStyles = makeStyles({
   root: {

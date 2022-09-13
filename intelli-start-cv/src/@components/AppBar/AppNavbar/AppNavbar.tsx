@@ -1,12 +1,13 @@
+import React from 'react';
+
+import type { Theme } from '@material-ui/core';
 import {
   Link as MUILink,
   List,
   ListItem,
   ListItemText,
   makeStyles,
-  Theme,
 } from '@material-ui/core';
-import React from 'react';
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {

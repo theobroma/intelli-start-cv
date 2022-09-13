@@ -1,13 +1,10 @@
-import {
-  Box,
-  Container,
-  Divider,
-  Grid,
-  makeStyles,
-  Theme,
-} from '@material-ui/core';
 import React from 'react';
+
+import type { Theme } from '@material-ui/core';
+import { Box, Container, Divider, Grid, makeStyles } from '@material-ui/core';
+
 import SectionTitle from '../../../@components/UI/SectionTitle';
+
 import ContactsInfo from './ContactsInfo';
 import { QuoteText } from './QuoteText';
 import { SocialButtons } from './SocialButtons';

@@ -1,3 +1,6 @@
+import React, { useState } from 'react';
+import clsx from 'clsx';
+
 import { Container, Typography, useMediaQuery } from '@material-ui/core';
 import AppBar from '@material-ui/core/AppBar';
 import Divider from '@material-ui/core/Divider';
@@ -8,11 +11,11 @@ import Toolbar from '@material-ui/core/Toolbar';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import MenuIcon from '@material-ui/icons/Menu';
-import clsx from 'clsx';
-import React, { useState } from 'react';
+
 import AppNavbar from '../AppNavbar';
 import NestedList from '../NestedList';
 import ThemeMenu from '../ThemeMenu/ThemeMenu';
+
 import { useStyles } from './PersistentDrawerLeft.styles';
 
 const PersistentDrawerLeft: React.FC = ({ children }) => {
@@ -44,7 +47,7 @@ const PersistentDrawerLeft: React.FC = ({ children }) => {
       >
         <Container maxWidth="lg">
           <Toolbar style={{ padding: 0 }}>
-            {isMobile && (
+            {!!isMobile && (
               <IconButton
                 // color="inherit"
                 aria-label="open drawer"

@@ -1,9 +1,11 @@
-import { Button, makeStyles, Theme, Typography } from '@material-ui/core';
+import React from 'react';
+import clsx from 'clsx';
+
+import type { Theme } from '@material-ui/core';
+import { Button, makeStyles, Typography } from '@material-ui/core';
 import EmailIcon from '@material-ui/icons/Email';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import TelegramIcon from '@material-ui/icons/Telegram';
-import clsx from 'clsx';
-import React from 'react';
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {

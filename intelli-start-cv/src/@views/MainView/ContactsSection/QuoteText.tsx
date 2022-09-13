@@ -1,5 +1,7 @@
-import { alpha, makeStyles, Theme } from '@material-ui/core';
 import React from 'react';
+
+import type { Theme } from '@material-ui/core';
+import { alpha, makeStyles } from '@material-ui/core';
 
 const useStyles = makeStyles((theme: Theme) => ({
   blockquote: {

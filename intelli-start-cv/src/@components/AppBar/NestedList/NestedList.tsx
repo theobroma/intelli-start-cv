@@ -1,4 +1,6 @@
 import React from 'react';
+
+import type { Theme } from '@material-ui/core';
 import {
   createStyles,
   Divider,
@@ -7,7 +9,6 @@ import {
   ListItem,
   ListItemText,
   makeStyles,
-  Theme,
 } from '@material-ui/core';
 
 export const useStyles = makeStyles((theme: Theme) =>

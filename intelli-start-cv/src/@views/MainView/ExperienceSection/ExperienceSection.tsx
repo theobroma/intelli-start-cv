@@ -1,3 +1,6 @@
+import React from 'react';
+
+import type { Theme } from '@material-ui/core';
 import {
   alpha,
   Box,
@@ -6,11 +9,10 @@ import {
   Grid,
   Link,
   makeStyles,
-  Theme,
   Typography,
 } from '@material-ui/core';
 import PermDataSettingIcon from '@material-ui/icons/PermDataSetting';
-import React from 'react';
+
 import SectionTitle from '../../../@components/UI/SectionTitle';
 
 const useStyles = makeStyles((theme: Theme) => ({
