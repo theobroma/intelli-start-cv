@@ -1,16 +1,9 @@
-import createCache from '@emotion/cache';
-import { CacheProvider } from '@emotion/react';
 import { PaletteMode, responsiveFontSizes } from '@mui/material';
 import CssBaseline from '@mui/material/CssBaseline';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import React from 'react';
 // import { useAppSelector } from '../@store/configureStore';
 // import { themeSelector } from '../@store/ui/selectors';
-
-const muiCache = createCache({
-  key: 'mui',
-  prepend: true,
-});
 
 // A custom theme for this app
 const LIGHT_THEME = {
@@ -98,12 +91,10 @@ const AppThemeProvider = ({ children }: { children?: React.ReactNode }) => {
   let theme = createTheme(DEEP_PURPLE_AMBER_THEME);
   theme = responsiveFontSizes(theme);
   return (
-    <CacheProvider value={muiCache}>
-      <ThemeProvider theme={theme}>
-        <CssBaseline />
-        {children}
-      </ThemeProvider>
-    </CacheProvider>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      {children}
+    </ThemeProvider>
   );
 };
 
